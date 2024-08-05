@@ -1,17 +1,11 @@
-name: Upload Website
-
-on:
-  push:
-    branches:
-    - master
-
+name: Sync S3
+on: [push]
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
     - uses: jakejarvis/s3-sync-action@master
-
       env:
         AWS_S3_BUCKET: 'quinncalzada-cloudresume'
         AWS_ACCESS_KEY_ID: 'AKIAQKGGXRVA2GR4MJGS'
