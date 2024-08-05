@@ -112,29 +112,10 @@
 
                <div class="columns download">
                   <p>
-                    <a href="https://shorturl.at/QGuNi" class="button" onclick="sendNotification()"><i class="fa fa-download"></i>Download Resume</a>
+                    <a href="https://shorturl.at/QGuNi" class="button" > <i class="fa fa-download"></i>Download Resume</a>
                   </p>
                 </div>
-                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-                <script>
-                  function sendNotification() {
-                    // Make an AJAX request to the Lambda function URL
-                    $.ajax({
-                      url: 'https://kxtuktrcwdngfktcpdeungxrji0fkkut.lambda-url.us-east-1.on.aws',
-                      type: 'POST',
-                      success: function(response) {
-                        // Handle the success response
-                        console.log(response);
-                      },
-                      error: function(error) {
-                        // Handle the error response
-                        console.error(error);
-                      }
-                    });
-                  }
-                </script>
-                
-
+               
 
             </div> <!-- end row -->
 
