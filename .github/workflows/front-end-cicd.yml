@@ -10,5 +10,5 @@ jobs:
         AWS_S3_BUCKET: 'quinncalzada-cloudresume'
         AWS_ACCESS_KEY_ID: 'AKIAQKGGXRVA2GR4MJGS'
         AWS_SECRET_ACCESS_KEY: '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'
-        AWS_REGION: 'us-east-1'   # optional: defaults to us-east-1
+        AWS_REGION: 'us-east-2'   # optional: defaults to us-east-1
         SOURCE_DIR: 'website'      # optional: defaults to entire repository
